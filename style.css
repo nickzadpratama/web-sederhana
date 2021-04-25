@@ -1,0 +1,296 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Style */
+body {
+  font: 16px/28px arial, sans-serif;
+  /*format ukuran font standar*/
+  background-image: url(gambar/spring.png);
+  color: #333;
+}
+
+.container {
+  width: 960px;
+  margin: 40px auto;
+  /*atas bawah 80px, kiri kanan auto*/
+  background-color: white;
+  position: relative;
+  -webkit-box-shadow: 0 0 15px #000;
+  -moz-box-shadow: 0 0 15px #000;
+  /*agar logo twitter yg absolute menyesuaikan containernya sebagai parent*/
+}
+
+.twitter {
+  width: 120px;
+  height: 120px;
+  background-image: url(gambar/twitter.png);
+  display: block;
+  text-indent: -9999px;
+  position: absolute;
+  top: 7px;
+  right: 5px;
+  background-size: cover;
+}
+
+.header {
+  padding: 20px;
+  padding-bottom: 10px;
+}
+
+.header .judul {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.header ul li {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+.header a {
+  text-decoration: none;
+  color: salmon;
+  padding: 3px;
+}
+
+.header a:hover {
+  background-color: lightskyblue;
+  color: white;
+}
+
+.header a:active {
+  background-color: white;
+  color: #333;
+}
+
+.hero {
+  height: 320px;
+  background-image: url(gambar/Van2.png);
+  background-size: cover;
+  background-position: 0px;
+  border-top: 5px solid salmon;
+  border-bottom: 5px solid lightskyblue;
+}
+
+.main {
+  padding: 20px;
+  width: 600px;
+  box-sizing: border-box;
+  /*agar tetap berukuran 600px, karena ada tambahan padding 20px*/
+  float: left;
+}
+
+.main h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.main .penulis {
+  font-size: 11px;
+  margin-top: -5px;
+}
+
+.penulis a {
+  color: salmon;
+  text-decoration: none;
+}
+
+.penulis a:hover {
+  background-color: lightskyblue;
+  color: white;
+}
+
+.penulis a:active {
+  background-color: white;
+  color: #333;
+}
+
+.main p {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+/* sidebar */
+.sidebar {
+  width: 300px;
+  padding: 20px;
+  float: right;
+}
+
+.sidebar h3 {
+  font-weight: bold;
+}
+
+.sidebar img {
+  width: 70px;
+  height: 70px;
+  float: left;
+  padding-right: 10px;
+}
+
+.sidebar p {
+  font: 12px/18px arial;
+  /*jika menulis spt ini minimal ada 3 value*/
+}
+
+.sidebar strong {
+  font-weight: bold;
+}
+
+.footer {
+  background-color: #333;
+  padding: 10px;
+}
+
+.copy {
+  font-size: 12px;
+  color: #eaeaea;
+  text-align: center;
+}
+
+/* clearfix */
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  *zoom: 1;
+}
